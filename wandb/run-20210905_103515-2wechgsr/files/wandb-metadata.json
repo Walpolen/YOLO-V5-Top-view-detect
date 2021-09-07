@@ -1,0 +1,35 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.9.1",
+    "heartbeatAt": "2021-09-05T08:35:20.459640",
+    "startedAt": "2021-09-05T08:35:15.164179",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 2060 with Max-Q Design",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--img",
+        "640",
+        "--batch",
+        "16",
+        "--epochs",
+        "3",
+        "--data",
+        "coco128.yaml",
+        "--weights",
+        "yolov5s.pt"
+    ],
+    "state": "running",
+    "program": "D:\\yolov5\\train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ultralytics/yolov5",
+        "commit": "fad57c29cd27c0fcbc0038b7b7312b9b6ef922a8"
+    },
+    "email": "rammdake@gmail.com",
+    "root": "D:/yolov5",
+    "host": "Legion-Laptop",
+    "username": "ldike",
+    "executable": "C:\\Users\\ldike\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
+}

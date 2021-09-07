@@ -1,0 +1,13 @@
+2021-09-05 12:05:42,701 INFO    MainThread:22632 [internal.py:wandb_internal():86] W&B internal server running at pid: 22632, started at: 2021-09-05 12:05:42.694927
+2021-09-05 12:05:42,703 INFO    WriterThread:22632 [datastore.py:open_for_write():77] open: C:\Users\ldike\Downloads\Top_view_detect\yolov5\wandb\run-20210905_120541-1ouad98w\run-1ouad98w.wandb
+2021-09-05 12:05:42,703 DEBUG   HandlerThread:22632 [handler.py:handle_request():126] handle_request: check_version
+2021-09-05 12:05:42,711 DEBUG   SenderThread:22632 [sender.py:send():182] send: header
+2021-09-05 12:05:42,711 DEBUG   SenderThread:22632 [sender.py:send_request():196] send_request: check_version
+2021-09-05 12:05:42,799 DEBUG   SenderThread:22632 [sender.py:send():182] send: run
+2021-09-05 12:05:42,808 INFO    SenderThread:22632 [sender.py:_maybe_setup_resume():421] checking resume status for None/YOLOv5/1ouad98w
+2021-09-05 12:05:43,402 INFO    SenderThread:22632 [dir_watcher.py:__init__():169] watching files in: C:\Users\ldike\Downloads\Top_view_detect\yolov5\wandb\run-20210905_120541-1ouad98w\files
+2021-09-05 12:05:43,402 INFO    SenderThread:22632 [sender.py:_start_run_threads():740] run started: 1ouad98w with start time 1630836341
+2021-09-05 12:05:43,431 DEBUG   SenderThread:22632 [sender.py:send():182] send: summary
+2021-09-05 12:05:43,433 INFO    SenderThread:22632 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-05 12:05:43,435 DEBUG   HandlerThread:22632 [handler.py:handle_request():126] handle_request: run_start
+2021-09-05 12:05:44,415 INFO    Thread-12 :22632 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\ldike\Downloads\Top_view_detect\yolov5\wandb\run-20210905_120541-1ouad98w\files\wandb-summary.json

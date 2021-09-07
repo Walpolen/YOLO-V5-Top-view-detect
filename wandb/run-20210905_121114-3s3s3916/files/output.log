@@ -1,0 +1,297 @@
+Overriding model.yaml nc=80 with nc=1
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Focus                     [3, 32, 3]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  3    156928  models.common.C3                        [128, 128, 3]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1    656896  models.common.SPP                       [512, 512, [5, 9, 13]]
+  9                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1     16182  models.yolo.Detect                      [1, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model Summary: 283 layers, 7063542 parameters, 7063542 gradients, 16.4 GFLOPs
+Transferred 354/362 items from yolov5s.pt
+Scaled weight_decay = 0.0005
+[34m[1moptimizer:[39m[22m SGD with parameter groups 59 weight, 62 weight (no decay), 62 bias
+
+
+
+
+
+
+
+
+
+
+[34m[1mtrain: [39m[22mScanning '..\datasets\train' images and labels...4300 found, 0 missing, 0 empty, 117 corrupted: 100%|█| 4300/430
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam5_1hour_00000011.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam5_1hour_00000012.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam5_1hour_00000014.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam6_1hour_00000135.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_1_trimmed_00000001.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_2_2_and_helf_mins_00000009.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_2_2_and_helf_mins_00000057.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_2_2_and_helf_mins_00000056.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_2_2_and_helf_mins_00000351.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_2_and_helf_mins_00000065.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000080.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000081.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000082.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000083.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000084.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000085.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000088.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000089.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000090.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000091.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000092.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000096.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000097.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000118.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000126.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000127.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000129.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000130.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000131.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000051.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000052.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000053.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000054.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000055.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000056.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000057.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000058.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000059.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000060.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000061.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000062.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000064.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000063.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000065.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000066.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000068.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000067.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000069.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000070.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000072.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000071.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000074.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000073.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000076.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000075.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000077.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000078.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000079.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000080.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000081.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000082.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000084.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000083.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000086.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000085.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000088.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000087.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000089.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000090.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000092.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000091.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000094.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000093.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000096.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000095.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000098.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000097.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000099.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000100.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000101.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000102.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000103.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000104.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000106.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000105.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000107.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000108.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000110.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000109.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000111.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000112.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000113.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000114.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000115.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000116.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000117.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000118.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000119.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000120.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000122.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000121.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000124.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000123.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000126.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000125.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000128.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000127.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000130.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000129.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000131.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000132.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000134.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000133.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000135.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_6_2_and_helf_mins_00000026.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_6_2_and_helf_mins_00000333.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_6_train_00000205.jpg: duplicate labels
+[34m[1mtrain: [39m[22mNew cache created: ..\datasets\train.cache
+[34m[1mval: [39m[22mScanning '..\datasets\train.cache' images and labels... 4300 found, 0 missing, 0 empty, 117 corrupted: 100%|█| 430
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam5_1hour_00000011.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam5_1hour_00000012.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam5_1hour_00000014.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam6_1hour_00000135.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_1_trimmed_00000001.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_2_2_and_helf_mins_00000009.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_2_2_and_helf_mins_00000057.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_2_2_and_helf_mins_00000056.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_2_2_and_helf_mins_00000351.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_2_and_helf_mins_00000065.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000080.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000081.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000082.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000083.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000084.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000085.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000088.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000089.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000090.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000091.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000092.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000096.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000097.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000118.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000126.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000127.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000129.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000130.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_3_trimmed_00000131.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000051.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000052.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000053.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000054.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000055.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000056.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000057.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000058.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000059.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000060.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000061.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000062.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000064.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000063.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000065.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000066.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000068.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000067.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000069.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000070.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000072.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000071.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000074.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000073.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000076.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000075.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000077.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000078.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000079.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000080.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000081.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000082.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000084.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000083.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000086.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000085.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000088.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000087.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000089.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000090.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000092.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000091.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000094.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000093.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000096.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000095.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000098.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000097.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000099.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000100.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000101.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000102.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000103.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000104.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000106.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000105.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000107.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000108.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000110.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000109.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000111.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000112.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000113.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000114.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000115.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000116.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000117.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000118.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000119.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000120.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000122.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000121.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000124.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000123.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000126.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000125.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000128.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000127.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000130.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000129.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000131.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000132.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000134.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000133.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_5_trimmed_00000135.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_6_2_and_helf_mins_00000026.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_6_2_and_helf_mins_00000333.jpg: duplicate labels
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label ..\datasets\train\cam_6_train_00000205.jpg: duplicate labels
+Plotting labels...
+[34m[1mautoanchor: [39m[22mAnalyzing anchors... anchors/target = 6.45, Best Possible Recall (BPR) = 0.9998
+Image sizes 640 train, 640 val
+Using 1 dataloader workers
+Logging results to [1mruns\train\exp12
+Starting training for 300 epochs...
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+

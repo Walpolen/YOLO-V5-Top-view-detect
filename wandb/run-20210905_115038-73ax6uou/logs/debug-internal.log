@@ -1,0 +1,35 @@
+2021-09-05 11:50:40,372 INFO    MainThread:16016 [internal.py:wandb_internal():86] W&B internal server running at pid: 16016, started at: 2021-09-05 11:50:40.366605
+2021-09-05 11:50:40,374 INFO    WriterThread:16016 [datastore.py:open_for_write():77] open: C:\Users\ldike\Downloads\Top_view_detect\yolov5\wandb\run-20210905_115038-73ax6uou\run-73ax6uou.wandb
+2021-09-05 11:50:40,375 DEBUG   HandlerThread:16016 [handler.py:handle_request():126] handle_request: check_version
+2021-09-05 11:50:40,383 DEBUG   SenderThread:16016 [sender.py:send():182] send: header
+2021-09-05 11:50:40,383 DEBUG   SenderThread:16016 [sender.py:send_request():196] send_request: check_version
+2021-09-05 11:50:40,440 DEBUG   SenderThread:16016 [sender.py:send():182] send: run
+2021-09-05 11:50:40,448 INFO    SenderThread:16016 [sender.py:_maybe_setup_resume():421] checking resume status for None/YOLOv5/73ax6uou
+2021-09-05 11:50:41,068 INFO    SenderThread:16016 [dir_watcher.py:__init__():169] watching files in: C:\Users\ldike\Downloads\Top_view_detect\yolov5\wandb\run-20210905_115038-73ax6uou\files
+2021-09-05 11:50:41,068 INFO    SenderThread:16016 [sender.py:_start_run_threads():740] run started: 73ax6uou with start time 1630835438
+2021-09-05 11:50:41,105 DEBUG   SenderThread:16016 [sender.py:send():182] send: summary
+2021-09-05 11:50:41,106 INFO    SenderThread:16016 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-05 11:50:41,109 DEBUG   HandlerThread:16016 [handler.py:handle_request():126] handle_request: run_start
+2021-09-05 11:50:42,071 INFO    Thread-12 :16016 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\ldike\Downloads\Top_view_detect\yolov5\wandb\run-20210905_115038-73ax6uou\files\wandb-summary.json
+2021-09-05 11:50:44,700 DEBUG   HandlerThread:16016 [meta.py:__init__():40] meta init
+2021-09-05 11:50:44,700 DEBUG   HandlerThread:16016 [meta.py:__init__():54] meta init done
+2021-09-05 11:50:44,701 DEBUG   HandlerThread:16016 [meta.py:probe():211] probe
+2021-09-05 11:50:44,711 DEBUG   HandlerThread:16016 [meta.py:_setup_git():201] setup git
+2021-09-05 11:50:44,811 DEBUG   HandlerThread:16016 [meta.py:_setup_git():208] setup git done
+2021-09-05 11:50:44,812 DEBUG   HandlerThread:16016 [meta.py:_save_pip():58] save pip
+2021-09-05 11:50:44,812 DEBUG   HandlerThread:16016 [meta.py:_save_pip():72] save pip done
+2021-09-05 11:50:44,813 DEBUG   HandlerThread:16016 [meta.py:probe():249] probe done
+2021-09-05 11:50:44,819 DEBUG   SenderThread:16016 [sender.py:send():182] send: files
+2021-09-05 11:50:44,819 INFO    SenderThread:16016 [sender.py:_save_file():873] saving file wandb-metadata.json with policy now
+2021-09-05 11:50:44,832 DEBUG   HandlerThread:16016 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-05 11:50:44,832 DEBUG   SenderThread:16016 [sender.py:send_request():196] send_request: stop_status
+2021-09-05 11:50:45,038 DEBUG   SenderThread:16016 [sender.py:send():182] send: config
+2021-09-05 11:50:45,108 INFO    Thread-12 :16016 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\ldike\Downloads\Top_view_detect\yolov5\wandb\run-20210905_115038-73ax6uou\files\wandb-metadata.json
+2021-09-05 11:50:45,108 INFO    Thread-12 :16016 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\ldike\Downloads\Top_view_detect\yolov5\wandb\run-20210905_115038-73ax6uou\files\output.log
+2021-09-05 11:50:45,109 INFO    Thread-12 :16016 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\ldike\Downloads\Top_view_detect\yolov5\wandb\run-20210905_115038-73ax6uou\files\requirements.txt
+2021-09-05 11:50:45,481 INFO    Thread-17 :16016 [upload_job.py:push():137] Uploaded file C:\Users\ldike\AppData\Local\Temp\tmpdg5kilviwandb\26fi6bqx-wandb-metadata.json
+2021-09-05 11:50:49,139 INFO    Thread-12 :16016 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\ldike\Downloads\Top_view_detect\yolov5\wandb\run-20210905_115038-73ax6uou\files\output.log
+2021-09-05 11:50:51,169 INFO    Thread-12 :16016 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\ldike\Downloads\Top_view_detect\yolov5\wandb\run-20210905_115038-73ax6uou\files\output.log
+2021-09-05 11:50:55,213 INFO    Thread-12 :16016 [dir_watcher.py:_on_file_modified():230] file/dir modified: C:\Users\ldike\Downloads\Top_view_detect\yolov5\wandb\run-20210905_115038-73ax6uou\files\output.log
+2021-09-05 11:51:00,043 DEBUG   HandlerThread:16016 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-05 11:51:00,043 DEBUG   SenderThread:16016 [sender.py:send_request():196] send_request: stop_status

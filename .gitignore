@@ -1,244 +1,209 @@
-# Repo-specific GitIgnore ----------------------------------------------------------------------------------------------
-*.jpg
-*.jpeg
-*.png
-*.bmp
-*.tif
-*.tiff
-*.heic
-*.JPG
-*.JPEG
-*.PNG
-*.BMP
-*.TIF
-*.TIFF
-*.HEIC
-*.mp4
-*.mov
-*.MOV
-*.avi
-*.data
-*.json
-*.cfg
-!cfg/yolov3*.cfg
 
-storage.googleapis.com
-runs/*
-data/*
-!data/hyps/*
-!data/images/zidane.jpg
-!data/images/bus.jpg
-!data/*.sh
-
-results*.csv
-
-# Datasets -------------------------------------------------------------------------------------------------------------
-coco/
-coco128/
-VOC/
-
-# MATLAB GitIgnore -----------------------------------------------------------------------------------------------------
-*.m~
-*.mat
-!targets*.mat
-
-# Neural Network weights -----------------------------------------------------------------------------------------------
-*.weights
-*.pt
-*.onnx
-*.mlmodel
-*.torchscript
-darknet53.conv.74
-yolov3-tiny.conv.15
-
-# GitHub Python GitIgnore ----------------------------------------------------------------------------------------------
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-wandb/
-.installed.cfg
-*.egg
-
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# celery beat schedule file
-celerybeat-schedule
-
-# SageMath parsed files
-*.sage.py
-
-# dotenv
-.env
-
-# virtualenv
-.venv*
-venv*/
-ENV*/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-
-
-# https://github.com/github/gitignore/blob/master/Global/macOS.gitignore -----------------------------------------------
-
-# General
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Icon must end with two \r
-Icon
-Icon?
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-
-# https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
-# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
-
-# User-specific stuff:
-.idea/*
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/dictionaries
-.html  # Bokeh Plots
-.pg  # TensorFlow Frozen Graphs
-.avi # videos
-
-# Sensitive or high-churn files:
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
-.idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
-
-# Gradle:
-.idea/**/gradle.xml
-.idea/**/libraries
-
-# CMake
-cmake-build-debug/
-cmake-build-release/
-
-# Mongo Explorer plugin:
-.idea/**/mongoSettings.xml
-
-## File-based project format:
-*.iws
-
-## Plugin-specific files:
-
-# IntelliJ
-out/
-
-# mpeltonen/sbt-idea plugin
-.idea_modules/
-
-# JIRA plugin
-atlassian-ide-plugin.xml
-
-# Cursive Clojure plugin
-.idea/replstate.xml
-
-# Crashlytics plugin (for Android Studio and IntelliJ)
-com_crashlytics_export_strings.xml
-crashlytics.properties
-crashlytics-build.properties
-fabric.properties
+runs/detect/exp/cam_6_test_00000027.jpg
+runs/detect/exp/cam_6_test_00000026.jpg
+runs/detect/exp/cam_6_test_00000025.jpg
+runs/detect/exp/cam_6_test_00000024.jpg
+runs/detect/exp/cam_6_test_00000023.jpg
+runs/detect/exp/cam_6_test_00000022.jpg
+runs/detect/exp/cam_6_test_00000021.jpg
+runs/detect/exp/cam_6_test_00000020.jpg
+runs/detect/exp/cam_6_test_00000019.jpg
+runs/detect/exp/cam_6_test_00000018.jpg
+runs/detect/exp/cam_6_test_00000017.jpg
+runs/detect/exp/cam_6_test_00000016.jpg
+runs/detect/exp/cam_6_test_00000015.jpg
+runs/detect/exp/cam_6_test_00000014.jpg
+runs/detect/exp/cam_6_test_00000013.jpg
+runs/detect/exp/cam_6_test_00000012.jpg
+runs/detect/exp/cam_6_test_00000011.jpg
+runs/detect/exp/cam_6_test_00000010.jpg
+runs/detect/exp/cam_6_test_00000009.jpg
+runs/detect/exp/cam_6_test_00000008.jpg
+runs/detect/exp/cam_6_test_00000007.jpg
+runs/detect/exp/cam_6_test_00000006.jpg
+runs/detect/exp/cam_6_test_00000005.jpg
+runs/detect/exp/cam_6_test_00000004.jpg
+runs/detect/exp/cam_6_test_00000003.jpg
+runs/detect/exp/cam_6_test_00000002.jpg
+runs/detect/exp/cam_6_test_00000001.jpg
+runs/detect/exp/cam_6_test_00000000.jpg
+runs/detect/exp/cam_5_test_00000035.jpg
+runs/detect/exp/cam_5_test_00000034.jpg
+runs/detect/exp/cam_5_test_00000033.jpg
+runs/detect/exp/cam_5_test_00000032.jpg
+runs/detect/exp/cam_5_test_00000031.jpg
+runs/detect/exp/cam_5_test_00000030.jpg
+runs/detect/exp/cam_5_test_00000029.jpg
+runs/detect/exp/cam_5_test_00000028.jpg
+runs/detect/exp/cam_5_test_00000027.jpg
+runs/detect/exp/cam_5_test_00000026.jpg
+runs/detect/exp/cam_5_test_00000025.jpg
+runs/detect/exp/cam_5_test_00000024.jpg
+runs/detect/exp/cam_5_test_00000023.jpg
+runs/detect/exp/cam_5_test_00000022.jpg
+runs/detect/exp/cam_5_test_00000021.jpg
+runs/detect/exp/cam_5_test_00000020.jpg
+runs/detect/exp/cam_5_test_00000019.jpg
+runs/detect/exp/cam_5_test_00000018.jpg
+runs/detect/exp/cam_5_test_00000017.jpg
+runs/detect/exp/cam_5_test_00000016.jpg
+runs/detect/exp/cam_5_test_00000015.jpg
+runs/detect/exp/cam_5_test_00000014.jpg
+runs/detect/exp/cam_5_test_00000013.jpg
+runs/detect/exp/cam_5_test_00000012.jpg
+runs/detect/exp/cam_5_test_00000011.jpg
+runs/detect/exp/cam_5_test_00000010.jpg
+runs/detect/exp/cam_5_test_00000009.jpg
+runs/detect/exp/cam_5_test_00000008.jpg
+runs/detect/exp/cam_5_test_00000007.jpg
+runs/detect/exp/cam_5_test_00000006.jpg
+runs/detect/exp/cam_5_test_00000005.jpg
+runs/detect/exp/cam_5_test_00000004.jpg
+runs/detect/exp/cam_5_test_00000003.jpg
+runs/detect/exp/cam_5_test_00000002.jpg
+runs/detect/exp/cam_5_test_00000001.jpg
+runs/detect/exp/cam_5_test_00000000.jpg
+runs/detect/exp/cam_3_test_00000038.jpg
+runs/detect/exp/cam_3_test_00000037.jpg
+runs/detect/exp/cam_3_test_00000036.jpg
+runs/detect/exp/cam_3_test_00000035.jpg
+runs/detect/exp/cam_3_test_00000034.jpg
+runs/detect/exp/cam_3_test_00000033.jpg
+runs/detect/exp/cam_3_test_00000032.jpg
+runs/detect/exp/cam_3_test_00000031.jpg
+runs/detect/exp/cam_3_test_00000030.jpg
+runs/detect/exp/cam_3_test_00000029.jpg
+runs/detect/exp/cam_3_test_00000028.jpg
+runs/detect/exp/cam_3_test_00000027.jpg
+runs/detect/exp/cam_3_test_00000026.jpg
+runs/detect/exp/cam_3_test_00000025.jpg
+runs/detect/exp/cam_3_test_00000024.jpg
+runs/detect/exp/cam_3_test_00000023.jpg
+runs/detect/exp/cam_3_test_00000022.jpg
+runs/detect/exp/cam_3_test_00000021.jpg
+runs/detect/exp/cam_3_test_00000020.jpg
+runs/detect/exp/cam_3_test_00000019.jpg
+runs/detect/exp/cam_3_test_00000018.jpg
+runs/detect/exp/cam_3_test_00000017.jpg
+runs/detect/exp/cam_3_test_00000016.jpg
+runs/detect/exp/cam_3_test_00000015.jpg
+runs/detect/exp/cam_3_test_00000014.jpg
+runs/detect/exp/cam_3_test_00000013.jpg
+runs/detect/exp/cam_3_test_00000012.jpg
+runs/detect/exp/cam_3_test_00000011.jpg
+runs/detect/exp/cam_3_test_00000010.jpg
+runs/detect/exp/cam_3_test_00000009.jpg
+runs/detect/exp/cam_3_test_00000008.jpg
+runs/detect/exp/cam_3_test_00000007.jpg
+runs/detect/exp/cam_3_test_00000006.jpg
+runs/detect/exp/cam_3_test_00000005.jpg
+runs/detect/exp/cam_3_test_00000004.jpg
+runs/detect/exp/cam_3_test_00000003.jpg
+runs/detect/exp/cam_3_test_00000002.jpg
+runs/detect/exp/cam_3_test_00000001.jpg
+runs/detect/exp/cam_3_test_00000000.jpg
+runs/detect/exp/cam_2_test_00000033.jpg
+runs/detect/exp/cam_2_test_00000032.jpg
+runs/detect/exp/cam_2_test_00000031.jpg
+runs/detect/exp/cam_2_test_00000030.jpg
+runs/detect/exp/cam_2_test_00000029.jpg
+runs/detect/exp/cam_2_test_00000028.jpg
+runs/detect/exp/cam_2_test_00000027.jpg
+runs/detect/exp/cam_2_test_00000026.jpg
+runs/detect/exp/cam_2_test_00000025.jpg
+runs/detect/exp/cam_2_test_00000024.jpg
+runs/detect/exp/cam_2_test_00000023.jpg
+runs/detect/exp/cam_2_test_00000022.jpg
+runs/detect/exp/cam_2_test_00000021.jpg
+runs/detect/exp/cam_2_test_00000020.jpg
+runs/detect/exp/cam_2_test_00000019.jpg
+runs/detect/exp/cam_2_test_00000018.jpg
+runs/detect/exp/cam_2_test_00000017.jpg
+runs/detect/exp/cam_2_test_00000016.jpg
+runs/detect/exp/cam_2_test_00000015.jpg
+runs/detect/exp/cam_2_test_00000014.jpg
+runs/detect/exp/cam_2_test_00000013.jpg
+runs/detect/exp/cam_2_test_00000012.jpg
+runs/detect/exp/cam_2_test_00000011.jpg
+runs/detect/exp/cam_2_test_00000010.jpg
+runs/detect/exp/cam_2_test_00000009.jpg
+runs/detect/exp/cam_2_test_00000008.jpg
+runs/detect/exp/cam_2_test_00000007.jpg
+runs/detect/exp/cam_2_test_00000006.jpg
+runs/detect/exp/cam_2_test_00000005.jpg
+runs/detect/exp/cam_2_test_00000004.jpg
+runs/detect/exp/cam_2_test_00000003.jpg
+runs/detect/exp/cam_2_test_00000002.jpg
+runs/detect/exp/cam_2_test_00000001.jpg
+runs/detect/exp/cam_2_test_00000000.jpg
+runs/detect/exp/cam_1_test_00000008.jpg
+runs/detect/exp/cam_1_test_00000007.jpg
+runs/detect/exp/cam_1_test_00000006.jpg
+runs/detect/exp/cam_1_test_00000005.jpg
+runs/detect/exp/cam_1_test_00000004.jpg
+runs/detect/exp/cam_1_test_00000003.jpg
+runs/detect/exp/cam_1_test_00000002.jpg
+runs/detect/exp/cam_1_test_00000001.jpg
+runs/detect/exp/cam_1_test_00000000.jpg
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_0_0.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_0_1.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_0_10.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_0_11.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_0_12.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_0_13.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_0_14.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_0_15.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_0_2.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_0_3.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_0_4.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_0_5.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_0_6.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_0_7.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_0_8.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_0_9.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_1_0.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_1_1.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_1_10.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_1_11.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_1_12.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_1_13.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_1_14.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_1_15.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_1_2.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_1_3.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_1_4.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_1_5.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_1_6.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_1_7.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_1_8.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_1_9.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_2_0.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_2_1.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_2_10.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_2_11.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_2_12.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_2_13.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_2_14.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_2_15.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_2_2.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_2_3.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_2_4.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_2_5.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_2_6.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_2_7.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_2_8.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Bounding Box Debugger/Images_2_9.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Labels_0_0.jpg
+wandb/run-20210905_122254-1rnqog72/files/media/images/Labels_0_1.jpg
+wandb/run-20210905_122254-1rnqog72/files/media/images/Mosaics_0_0.jpg
+wandb/run-20210905_122254-1rnqog72/files/media/images/Mosaics_0_1.jpg
+wandb/run-20210905_122254-1rnqog72/files/media/images/Mosaics_0_2.jpg
+wandb/run-20210905_122254-1rnqog72/files/media/images/Results_3_0.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Results_3_1.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Results_3_2.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Results_3_3.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Results_3_4.png
+wandb/run-20210905_122254-1rnqog72/files/media/images/Results_3_5.png
+runs/detect/exp2/cam3_1hour.mp4
+runs/detect/exp/cam_6_test_00000029.jpg
+runs/detect/exp/cam_6_test_00000028.jpg

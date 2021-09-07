@@ -1,0 +1,41 @@
+2021-09-05 10:20:11,910 INFO    MainThread:14948 [internal.py:wandb_internal():86] W&B internal server running at pid: 14948, started at: 2021-09-05 10:20:11.904681
+2021-09-05 10:20:11,913 INFO    WriterThread:14948 [datastore.py:open_for_write():77] open: D:\yolov5\wandb\run-20210905_102010-1x2p668z\run-1x2p668z.wandb
+2021-09-05 10:20:11,913 DEBUG   HandlerThread:14948 [handler.py:handle_request():126] handle_request: check_version
+2021-09-05 10:20:11,921 DEBUG   SenderThread:14948 [sender.py:send():182] send: header
+2021-09-05 10:20:11,921 DEBUG   SenderThread:14948 [sender.py:send_request():196] send_request: check_version
+2021-09-05 10:20:12,017 DEBUG   SenderThread:14948 [sender.py:send():182] send: run
+2021-09-05 10:20:12,026 INFO    SenderThread:14948 [sender.py:_maybe_setup_resume():421] checking resume status for None/YOLOv5/1x2p668z
+2021-09-05 10:20:12,610 INFO    SenderThread:14948 [dir_watcher.py:__init__():169] watching files in: D:\yolov5\wandb\run-20210905_102010-1x2p668z\files
+2021-09-05 10:20:12,610 INFO    SenderThread:14948 [sender.py:_start_run_threads():740] run started: 1x2p668z with start time 1630830010
+2021-09-05 10:20:12,637 DEBUG   SenderThread:14948 [sender.py:send():182] send: summary
+2021-09-05 10:20:12,638 INFO    SenderThread:14948 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-09-05 10:20:12,641 DEBUG   HandlerThread:14948 [handler.py:handle_request():126] handle_request: run_start
+2021-09-05 10:20:13,616 INFO    Thread-12 :14948 [dir_watcher.py:_on_file_created():217] file/dir created: D:\yolov5\wandb\run-20210905_102010-1x2p668z\files\wandb-summary.json
+2021-09-05 10:20:16,781 DEBUG   HandlerThread:14948 [meta.py:__init__():40] meta init
+2021-09-05 10:20:16,781 DEBUG   HandlerThread:14948 [meta.py:__init__():54] meta init done
+2021-09-05 10:20:16,781 DEBUG   HandlerThread:14948 [meta.py:probe():211] probe
+2021-09-05 10:20:17,397 DEBUG   HandlerThread:14948 [meta.py:_setup_git():201] setup git
+2021-09-05 10:20:17,490 DEBUG   HandlerThread:14948 [meta.py:_setup_git():208] setup git done
+2021-09-05 10:20:17,490 DEBUG   HandlerThread:14948 [meta.py:_save_pip():58] save pip
+2021-09-05 10:20:17,491 DEBUG   HandlerThread:14948 [meta.py:_save_pip():72] save pip done
+2021-09-05 10:20:17,491 DEBUG   HandlerThread:14948 [meta.py:probe():249] probe done
+2021-09-05 10:20:17,504 DEBUG   SenderThread:14948 [sender.py:send():182] send: files
+2021-09-05 10:20:17,504 INFO    SenderThread:14948 [sender.py:_save_file():873] saving file wandb-metadata.json with policy now
+2021-09-05 10:20:17,514 DEBUG   HandlerThread:14948 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-05 10:20:17,516 DEBUG   SenderThread:14948 [sender.py:send_request():196] send_request: stop_status
+2021-09-05 10:20:17,634 INFO    Thread-12 :14948 [dir_watcher.py:_on_file_created():217] file/dir created: D:\yolov5\wandb\run-20210905_102010-1x2p668z\files\output.log
+2021-09-05 10:20:17,634 INFO    Thread-12 :14948 [dir_watcher.py:_on_file_created():217] file/dir created: D:\yolov5\wandb\run-20210905_102010-1x2p668z\files\wandb-metadata.json
+2021-09-05 10:20:17,635 INFO    Thread-12 :14948 [dir_watcher.py:_on_file_created():217] file/dir created: D:\yolov5\wandb\run-20210905_102010-1x2p668z\files\requirements.txt
+2021-09-05 10:20:17,731 DEBUG   SenderThread:14948 [sender.py:send():182] send: config
+2021-09-05 10:20:18,176 INFO    Thread-17 :14948 [upload_job.py:push():137] Uploaded file C:\Users\ldike\AppData\Local\Temp\tmpyup3t5mswandb\lktorz4c-wandb-metadata.json
+2021-09-05 10:20:19,641 INFO    Thread-12 :14948 [dir_watcher.py:_on_file_modified():230] file/dir modified: D:\yolov5\wandb\run-20210905_102010-1x2p668z\files\output.log
+2021-09-05 10:20:32,745 DEBUG   HandlerThread:14948 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-05 10:20:32,746 DEBUG   SenderThread:14948 [sender.py:send_request():196] send_request: stop_status
+2021-09-05 10:20:42,797 INFO    Thread-12 :14948 [dir_watcher.py:_on_file_modified():230] file/dir modified: D:\yolov5\wandb\run-20210905_102010-1x2p668z\files\config.yaml
+2021-09-05 10:20:47,961 DEBUG   HandlerThread:14948 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-05 10:20:47,961 DEBUG   SenderThread:14948 [sender.py:send_request():196] send_request: stop_status
+2021-09-05 10:20:53,209 DEBUG   SenderThread:14948 [sender.py:send():182] send: stats
+2021-09-05 10:21:03,206 DEBUG   HandlerThread:14948 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-05 10:21:03,206 DEBUG   SenderThread:14948 [sender.py:send_request():196] send_request: stop_status
+2021-09-05 10:21:18,432 DEBUG   HandlerThread:14948 [handler.py:handle_request():126] handle_request: stop_status
+2021-09-05 10:21:18,433 DEBUG   SenderThread:14948 [sender.py:send_request():196] send_request: stop_status

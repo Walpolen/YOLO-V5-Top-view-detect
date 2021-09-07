@@ -1,0 +1,36 @@
+        status_response = self._interface.communicate_stop_status()status_response = self._interface.communicate_network_status()
+  File "C:\Users\ldike\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\interface\interface.py", line 737, in communicate_stop_status
+  File "C:\Users\ldike\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\interface\interface.py", line 749, in communicate_network_status
+    resp = self._communicate(req, timeout=timeout, local=True)
+  File "C:\Users\ldike\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\interface\interface.py", line 539, in _communicate
+    resp = self._communicate(req, timeout=timeout, local=True)
+  File "C:\Users\ldike\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\interface\interface.py", line 539, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "C:\Users\ldike\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\interface\interface.py", line 544, in _communicate_async
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "C:\Users\ldike\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\interface\interface.py", line 544, in _communicate_async
+    raise Exception("The wandb backend process has shutdown")
+Exception    : raise Exception("The wandb backend process has shutdown")The wandb backend process has shutdown
+Exception: The wandb backend process has shutdown
+Traceback (most recent call last):
+  File "C:\Users\ldike\Downloads\Top_view_detect\yolov5\train.py", line 610, in <module>
+    main(opt)
+  File "C:\Users\ldike\Downloads\Top_view_detect\yolov5\train.py", line 508, in main
+    train(opt.hyp, opt, device)
+  File "C:\Users\ldike\Downloads\Top_view_detect\yolov5\train.py", line 85, in train
+    loggers = Loggers(save_dir, weights, opt, hyp, LOGGER)  # loggers instance
+  File "C:\Users\ldike\Downloads\Top_view_detect\yolov5\utils\loggers\__init__.py", line 62, in __init__
+    self.wandb = WandbLogger(self.opt, run_id)
+  File "C:\Users\ldike\Downloads\Top_view_detect\yolov5\utils\loggers\wandb\wandb_utils.py", line 178, in __init__
+    self.wandb_run.config.update({'data_dict': self.wandb_artifact_data_dict},
+  File "C:\Users\ldike\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\wandb_config.py", line 171, in update
+    self._callback(data=sanitized)
+  File "C:\Users\ldike\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\wandb_run.py", line 846, in _config_callback
+    self._backend.interface.publish_config(key=key, val=val, data=data)
+  File "C:\Users\ldike\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\interface\interface.py", line 617, in publish_config
+    self._publish_config(cfg)
+  File "C:\Users\ldike\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\interface\interface.py", line 621, in _publish_config
+    self._publish(rec)
+  File "C:\Users\ldike\AppData\Local\Programs\Python\Python39\lib\site-packages\wandb\sdk\interface\interface.py", line 530, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown

@@ -1,0 +1,23 @@
+2021-09-05 10:35:15,168 INFO    MainThread:21368 [wandb_setup.py:_flush():69] setting env: {}
+2021-09-05 10:35:15,169 INFO    MainThread:21368 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-09-05 10:35:15,169 INFO    MainThread:21368 [wandb_init.py:_log_setup():342] Logging user logs to D:\yolov5\wandb\run-20210905_103515-2wechgsr\logs\debug.log
+2021-09-05 10:35:15,169 INFO    MainThread:21368 [wandb_init.py:_log_setup():343] Logging internal logs to D:\yolov5\wandb\run-20210905_103515-2wechgsr\logs\debug-internal.log
+2021-09-05 10:35:15,170 INFO    MainThread:21368 [wandb_init.py:init():375] calling init triggers
+2021-09-05 10:35:15,170 INFO    MainThread:21368 [wandb_init.py:init():380] wandb.init called with sweep_config: {}
+config: {'weights': 'yolov5s.pt', 'cfg': '', 'data': '.\\data\\coco128.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0, 'copy_paste': 0.0}, 'epochs': 3, 'batch_size': 16, 'imgsz': 640, 'rect': False, 'resume': False, 'nosave': False, 'noval': False, 'noautoanchor': False, 'evolve': None, 'bucket': '', 'cache': None, 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'adam': False, 'sync_bn': False, 'workers': 8, 'project': 'runs/train', 'entity': None, 'name': 'exp', 'exist_ok': False, 'quad': False, 'linear_lr': False, 'label_smoothing': 0.0, 'upload_dataset': False, 'bbox_interval': -1, 'save_period': -1, 'artifact_alias': 'latest', 'local_rank': -1, 'freeze': 0, 'patience': 30, 'save_dir': 'runs\\train\\exp3'}
+2021-09-05 10:35:15,172 INFO    MainThread:21368 [wandb_init.py:init():424] starting backend
+2021-09-05 10:35:15,172 INFO    MainThread:21368 [backend.py:_multiprocessing_setup():70] multiprocessing start_methods=spawn, using: spawn
+2021-09-05 10:35:15,179 INFO    MainThread:21368 [backend.py:ensure_launched():135] starting backend process...
+2021-09-05 10:35:15,282 INFO    MainThread:21368 [backend.py:ensure_launched():139] started backend process with pid: 12876
+2021-09-05 10:35:15,283 INFO    MainThread:21368 [wandb_init.py:init():429] backend started and connected
+2021-09-05 10:35:15,319 INFO    MainThread:21368 [wandb_init.py:init():477] updated telemetry
+2021-09-05 10:35:15,321 INFO    MainThread:21368 [wandb_init.py:init():500] communicating current version
+2021-09-05 10:35:16,776 INFO    MainThread:21368 [wandb_init.py:init():505] got version response 
+2021-09-05 10:35:16,776 INFO    MainThread:21368 [wandb_init.py:init():513] communicating run to backend with 30 second timeout
+2021-09-05 10:35:17,393 INFO    MainThread:21368 [wandb_init.py:init():540] starting run threads in backend
+2021-09-05 10:35:20,580 INFO    MainThread:21368 [wandb_run.py:_console_start():1601] atexit reg
+2021-09-05 10:35:20,582 INFO    MainThread:21368 [wandb_run.py:_redirect():1475] redirect: SettingsConsole.WRAP
+2021-09-05 10:35:20,582 INFO    MainThread:21368 [wandb_run.py:_redirect():1512] Wrapping output streams.
+2021-09-05 10:35:20,585 INFO    MainThread:21368 [wandb_run.py:_redirect():1536] Redirects installed.
+2021-09-05 10:35:20,585 INFO    MainThread:21368 [wandb_init.py:init():565] run started, returning control to user process
+2021-09-05 10:35:20,595 INFO    MainThread:21368 [wandb_run.py:_config_callback():843] config_cb None None {'data_dict': {'path': './datasets/coco128', 'train': 'datasets\\coco128\\images\\train2017', 'val': 'datasets\\coco128\\images\\train2017', 'test': None, 'nc': 80, 'names': ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light', 'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow', 'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee', 'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard', 'tennis racket', 'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple', 'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch', 'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase', 'scissors', 'teddy bear', 'hair drier', 'toothbrush']}}
