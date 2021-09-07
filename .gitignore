@@ -207,3 +207,5 @@ wandb/run-20210905_122254-1rnqog72/files/media/images/Results_3_5.png
 runs/detect/exp2/cam3_1hour.mp4
 runs/detect/exp/cam_6_test_00000029.jpg
 runs/detect/exp/cam_6_test_00000028.jpg
+yolov5s.pt
+yolov5x.pt
